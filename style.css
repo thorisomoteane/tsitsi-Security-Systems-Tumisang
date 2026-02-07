@@ -1,0 +1,94 @@
+:root {
+    --navy: #1B365D;
+    --blue: #3498DB;
+    --platinum: #f4f4f9;
+    --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+html { scroll-behavior: smooth; }
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-logo { height: 50px; }
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--navy);
+    margin-left: 25px;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(27, 54, 93, 0.8), rgba(27, 54, 93, 0.8)), url('https://images.unsplash.com/photo-1557597774-9d2739f85a76?auto=format&fit=crop&q=80') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.highlight { color: var(--blue); }
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 20px; }
+
+.hero-btns { margin-top: 30px; }
+
+.btn-primary, .btn-download {
+    background: var(--blue);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-secondary {
+    border: 2px solid var(--white);
+    color: white;
+    padding: 13px 30px;
+    border-radius: 5px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* Cards */
+.services { padding: 80px 10%; background: var(--platinum); }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-bottom: 5px solid var(--blue);
+}
+
+/* Footer */
+footer { background: var(--navy); color: white; padding: 60px 10% 20px; }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
